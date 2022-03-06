@@ -3,9 +3,9 @@
 //描述角色
 #include<string>
 
-class charater {
+class character {
 public:
-	charater();
+	character();
 
 	void move();
 	void fire();
@@ -26,4 +26,12 @@ private:
 	unsigned skillStorage;//技能存量
 
 	unsigned color[3];
+};
+
+
+//描述操作
+struct actions {
+	float accx, accy;	//x、y方向加速度
+	float firex, firey;	//x、y方向开火强度分量
+	float chanceOfSk1, chanceOfSk2, chanceOfSk3, chanceOfSk4, chanceOfNoSk;	//各个技能几率
 };

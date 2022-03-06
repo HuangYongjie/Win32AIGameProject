@@ -2,8 +2,10 @@
 
 //ÃèÊöÒ»¶Ó½ÇÉ«
 
-#include "charater.h"
+#include "character.h"
 
 class charaterGroup {
+public:
 
+ 
 };

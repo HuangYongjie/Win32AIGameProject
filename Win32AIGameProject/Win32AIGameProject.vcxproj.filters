@@ -36,7 +36,7 @@
     <ClInclude Include="charaterGroup.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="charater.h">
+    <ClInclude Include="character.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="bulletGroup.h">
@@ -45,12 +45,27 @@
     <ClInclude Include="bullet.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="controller.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="playerController.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Win32AIGameProject.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="bullet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="gameState.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="character.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="playerController.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

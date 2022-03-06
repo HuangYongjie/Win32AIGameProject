@@ -141,17 +141,22 @@
   <ItemGroup>
     <ClInclude Include="bullet.h" />
     <ClInclude Include="bulletGroup.h" />
-    <ClInclude Include="charater.h" />
+    <ClInclude Include="character.h" />
     <ClInclude Include="charaterGroup.h" />
+    <ClInclude Include="controller.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="gameState.h" />
     <ClInclude Include="inputManager.h" />
+    <ClInclude Include="playerController.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Win32AIGameProject.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="bullet.cpp" />
+    <ClCompile Include="character.cpp" />
+    <ClCompile Include="gameState.cpp" />
+    <ClCompile Include="playerController.cpp" />
     <ClCompile Include="Win32AIGameProject.cpp" />
   </ItemGroup>
   <ItemGroup>
