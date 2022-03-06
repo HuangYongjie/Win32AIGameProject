@@ -3,6 +3,8 @@
 
 #include "framework.h"
 #include "Win32AIGameProject.h"
+#include "gameState.h"
+#include "inputManager.h"
 
 #define MAX_LOADSTRING 100
 #define WINDOW_TIMER 1
@@ -11,6 +13,9 @@
 HINSTANCE hInst;                                // 当前实例
 WCHAR szTitle[MAX_LOADSTRING];                  // 标题栏文本
 WCHAR szWindowClass[MAX_LOADSTRING];            // 主窗口类名
+
+gameState game;
+inputManager ipm;
 
 // 此代码模块中包含的函数的前向声明:
 ATOM                MyRegisterClass(HINSTANCE hInstance);
@@ -112,6 +117,9 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
        5, // 5毫秒间隔
        (TIMERPROC)NULL);
 
+   //初始化游戏状态
+   game = gameState();
+
    ShowWindow(hWnd, nCmdShow);
    UpdateWindow(hWnd);
 
@@ -182,8 +190,15 @@ INT_PTR CALLBACK About(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam)
             return (INT_PTR)TRUE;
         }
         break;
-    }
     case WM_TIMER:
+        inputActions acts = ipm.getAction();
+        game.update(acts);
+        break;
+
+    case WM_KEYDOWN:
+
+        break;
+    }
 
     return (INT_PTR)FALSE;
 }

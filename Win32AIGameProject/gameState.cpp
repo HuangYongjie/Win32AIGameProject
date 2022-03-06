@@ -13,3 +13,8 @@ void rePaint(HWND& hw) {
     EndPaint(hw, &ps);
 
 }
+
+gameState::gameState()
+{
+    
+}

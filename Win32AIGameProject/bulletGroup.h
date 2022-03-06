@@ -13,7 +13,7 @@ public:
 
 	void addBullet();//添加子弹，由character开火时调用
 
-	std::vector<bullet> bullets;
+	std::vector<bullet> butts;
 
 
 

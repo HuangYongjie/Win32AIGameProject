@@ -5,6 +5,7 @@
 
 #include "charaterGroup.h"
 #include "bulletGroup.h"
+#include "inputActions.h"
 #include<Windows.h>
 
 class gameState {
@@ -18,7 +19,7 @@ public:
 	unsigned rangex, rangey; //窗口范围，也是子弹、角色等的可移动范围
 
 	//刷新状态
-	void update();
+	void update(inputActions &);
 
 	//重置状态
 	void reset();

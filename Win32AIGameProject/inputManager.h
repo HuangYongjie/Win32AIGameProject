@@ -5,14 +5,13 @@
 //等待下次接收TIMER消息时处理，因此需要定义一个容器记录输入
 
 #include<Windows.h>
-
-class action {
-
-};
+#include "inputActions.h"
 
 class inputManager {
 public:
 	inputManager();
 
-	getAction()
+	inputActions getAction();
+
+	void recordInput()
 };
