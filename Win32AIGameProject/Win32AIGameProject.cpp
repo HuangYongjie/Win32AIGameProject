@@ -183,5 +183,7 @@ INT_PTR CALLBACK About(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam)
         }
         break;
     }
+    case WM_TIMER:
+
     return (INT_PTR)FALSE;
 }

@@ -27,9 +27,30 @@
     <ClInclude Include="Win32AIGameProject.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="inputManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gameState.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="charaterGroup.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="charater.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="bulletGroup.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="bullet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Win32AIGameProject.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="bullet.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
