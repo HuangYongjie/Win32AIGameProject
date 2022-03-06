@@ -2,7 +2,7 @@ Win32AIGameProject
 
 项目开发中
 
-这个项目是用win32 api编写的2D游戏demo，是对我以前做过的一个pygame项目的重制。
+这个项目是用win32 api编写的2D游戏demo，是对我以前做过的一个pygame项目https://github.com/HuangYongjie/AIGame_Python的重制。
 原python项目是一个3V3射击游戏，3个玩家方角色，3个敌方角色。设计核心为对游戏AI的训练，玩家可以创建AI存档，通过训练AI获得成长，用自己训练好的AI去和电脑AI对战，或者和其他玩家对战。
 原python项目因为给AI的输入参数选取不合理等原因暂时搁置。
 本项目意在实现原python项目的游戏框架部分，而将角色控制函数设置为通用性接口函数，以便后期对AI训练功能的开发。
